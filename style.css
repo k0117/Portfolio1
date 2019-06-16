@@ -71,7 +71,15 @@ header .container {
   #nav .flex {
     justify-content: center;
   }
+  nav li a {
+    margin-left: 12px;
+  }
   button {
     width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  #nav .flex {
+    display: none;
   }
 }
