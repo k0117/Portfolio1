@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=B612+Mono:400,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'B612 Mono', monospace, sans-serif;
+  letter-spacing: 1px;
+  list-style: none;
+}
+.container {
+  max-width: 980px;
+  width: 100%;
+  justify-content: space-between;
+}
+.current {
+  color: #000;
+  opacity: 1;
+}
+.flex {
+  display: flex;
+  margin: auto;
+}
+
+/* Nav */
+#nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  /* background: rgba(0,0,0,0.1); */
+}
+nav > .flex {
+  height: 80px;
+  align-items: center;
+}
+nav li a {
+  color: #000;
+  opacity: .6;
+  margin-left: 30px;
+  text-decoration: none;
+  /* transition: all .3s ease; */
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+nav li a:hover {
+  opacity: 1;
+  color: #000;
+  border-bottom: 2px solid #000;
+  text-decoration: none;
+}
+
+/* Header */
+#header {
+  height: 100vh;
+  display: flex;
+}
+header .container {
+  margin: auto;
+}
+
+/* Skills */
+#skills p {
+  padding: 0 10px;
+}
+
+/* Works */
+
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  #nav .flex {
+    justify-content: center;
+  }
+  button {
+    width: 100%;
+  }
+}
